@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="@drawable/first_screen_background"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/navbar"
+        android:layout_marginVertical="5dp"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_logo"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            app:civ_border_color="#000207"
+            app:civ_border_width="2dp"
+            android:src="@drawable/profile_pic_logo"
+            />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/navbar"
+        android:background="#9594A6"
+        android:layout_marginHorizontal="5dp"
+        />
+    <TextView
+        android:id="@+id/text_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:text="Enter text in textbox"
+        android:textColor="#FDFEFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+       android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="80dp"
+        />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_below="@+id/text_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="160dp"
+        android:textColor="@color/white"
+        android:paddingHorizontal="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/news_backgroud"
+        android:textAlignment="viewStart"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_backgroud"
+            android:id="@+id/fake_layout"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/fake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAKE"
+
+                android:paddingHorizontal="30dp"
+                android:textSize="60sp"
+                android:textColor="#ED1414"
+
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/fake"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/fake_icon"
+                android:layout_marginRight="10dp"
+
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/real_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_backgroud"
+            android:visibility="gone"
+
+            >
+            <TextView
+                android:id="@+id/fake_real"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REAL"
+
+                android:paddingHorizontal="30dp"
+                android:textSize="60sp"
+                android:textColor="#2CDD0E"
+
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/fake_real"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/real_icon"
+                android:layout_marginRight="10dp"
+
+
+                />
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+
+            android:text="Check"
+            android:layout_alignParentBottom="true"
+            android:paddingHorizontal="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_backgroud"
+
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/check_button"
+            android:id="@+id/tweet"
+
+            android:src="@mipmap/twitterlogo"
+            android:elevation="10dp"
+            android:clickable="true"
+
+
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

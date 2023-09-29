@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="@drawable/first_screen_background"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:src="@drawable/ic_logo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="100dp"
+    />
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Email"
+        android:paddingHorizontal="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:background="@drawable/transparent_backgroud"
+
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Password"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/transparent_backgroud"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+
+
+        />
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/password"
+        android:background="@drawable/btn_backgroud"
+
+
+        android:layout_marginTop="60dp"
+        android:text="Log In"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:id="@+id/new_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_in"
+        android:text="New user ? "
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In."
+        android:layout_toRightOf="@+id/new_user"
+        android:layout_below="@+id/log_in"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        />
+
+
+
+</RelativeLayout>
